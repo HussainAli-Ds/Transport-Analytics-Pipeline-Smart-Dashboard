@@ -1,0 +1,155 @@
+2026-03-24 03:15:49,712 - INFO - Watching for new files...
+2026-03-24 03:17:01,976 - INFO - Processing started: C:/Pipeline-Transportor\input_files\Summary_Transportors_Data.xlsx
+2026-03-24 03:17:23,222 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\Summary_Transportors_Data.xlsx | Error: "['transporter'] not in index"
+2026-03-24 03:28:52,349 - INFO - Watching for new files...
+2026-03-24 03:29:35,072 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 03:30:04,714 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-24 03:38:57,140 - INFO - Watching for new files...
+2026-03-24 03:39:14,960 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 03:39:43,346 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-24 03:47:47,873 - INFO - Watching for new files...
+2026-03-24 03:47:58,569 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 03:49:49,325 - INFO - Watching for new files...
+2026-03-24 03:50:07,881 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 03:50:36,190 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: Not an executable object: '\n    INSERT INTO transportors (\n        dated, transporter, vehicle_no, material,\n        zkb_slip_no, supplier_slip_no, location,\n        from_location, to_location, trips,\n        zkb_qty_cft, tons\n    )\n    VALUES (\n        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,\n        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,\n        %(from_location)s, %(to_location)s, %(trips)s,\n        %(zkb_qty_cft)s, %(tons)s\n    )\n    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)\n    DO NOTHING;\n    '
+2026-03-24 03:57:24,380 - INFO - Watching for new files...
+2026-03-24 03:57:58,716 - INFO - Watching for new files...
+2026-03-24 03:58:06,182 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 03:58:24,956 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.errors.UndefinedColumn) column "transporter" of relation "transportors" does not exist
+LINE 3:         dated, transporter, vehicle_no, material,
+                       ^
+
+[SQL: 
+    INSERT INTO transportors (
+        dated, transporter, vehicle_no, material,
+        zkb_slip_no, supplier_slip_no, location,
+        from_location, to_location, trips,
+        zkb_qty_cft, tons
+    )
+    VALUES (
+        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,
+        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,
+        %(from_location)s, %(to_location)s, %(trips)s,
+        %(zkb_qty_cft)s, %(tons)s
+    )
+    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)
+    DO NOTHING;
+    ]
+[parameters: [{'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-14', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 9.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 55, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 12.0, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 578, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 56, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 11.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 533, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-08', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 8.0, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 54, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 13.0, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 588, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-03', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 10.0, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-06-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-09', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 6.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-10', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 7.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 611, 'tons': 29.18}  ... displaying 10 of 1532 total bound parameter sets ...  {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAG-521', 'material': 'Subbase', 'zkb_slip_no': 2456.0, 'supplier_slip_no': 280.0, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1160, 'tons': 57.02}, {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAK-347', 'material': 'Subbase', 'zkb_slip_no': 2457.0, 'supplier_slip_no': 282.0, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1220, 'tons': 59.955}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-24 04:00:29,390 - INFO - Watching for new files...
+2026-03-24 04:00:50,963 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 04:01:10,445 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.errors.UndefinedColumn) column "transporter" of relation "transportors" does not exist
+LINE 3:         dated, transporter, vehicle_no, material,
+                       ^
+
+[SQL: 
+    INSERT INTO transportors (
+        dated, transporter, vehicle_no, material,
+        zkb_slip_no, supplier_slip_no, location,
+        from_location, to_location, trips,
+        zkb_qty_cft, tons
+    )
+    VALUES (
+        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,
+        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,
+        %(from_location)s, %(to_location)s, %(trips)s,
+        %(zkb_qty_cft)s, %(tons)s
+    )
+    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)
+    DO NOTHING;
+    ]
+[parameters: [{'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-14', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 9.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 55, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 12.0, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 578, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 56, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 11.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 533, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-08', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 8.0, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 54, 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 13.0, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 588, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-03', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 10.0, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-06-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-09', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 6.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-10', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': 7.0, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 611, 'tons': 29.18}  ... displaying 10 of 1532 total bound parameter sets ...  {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAG-521', 'material': 'Subbase', 'zkb_slip_no': 2456.0, 'supplier_slip_no': 280.0, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1160, 'tons': 57.02}, {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAK-347', 'material': 'Subbase', 'zkb_slip_no': 2457.0, 'supplier_slip_no': 282.0, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1220, 'tons': 59.955}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-24 04:12:03,032 - INFO - Watching for new files...
+2026-03-24 04:12:47,359 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 04:13:07,699 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "9.0"
+LINE 10:         '-', '9.0', 'Shah Faisal C.Plant to 363+000',
+                      ^
+
+[SQL: 
+    INSERT INTO transportors (
+        dated, transporter, vehicle_no, material,
+        zkb_slip_no, supplier_slip_no, location,
+        from_location, to_location, trips,
+        zkb_qty_cft, tons
+    )
+    VALUES (
+        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,
+        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,
+        %(from_location)s, %(to_location)s, %(trips)s,
+        %(zkb_qty_cft)s, %(tons)s
+    )
+    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)
+    DO NOTHING;
+    ]
+[parameters: [{'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-14', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '9.0', 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '55', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '12.0', 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 578, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '56', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '11.0', 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 533, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-08', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '8.0', 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '54', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '13.0', 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 588, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-03', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '10.0', 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-06-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-09', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '6.0', 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-10', 'material': 'Subbase', 'zkb_slip_no': '-', 'supplier_slip_no': '7.0', 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 611, 'tons': 29.18}  ... displaying 10 of 1532 total bound parameter sets ...  {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAG-521', 'material': 'Subbase', 'zkb_slip_no': '2456.0', 'supplier_slip_no': '280.0', 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1160, 'tons': 57.02}, {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAK-347', 'material': 'Subbase', 'zkb_slip_no': '2457.0', 'supplier_slip_no': '282.0', 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1220, 'tons': 59.955}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-03-24 04:19:06,455 - INFO - Watching for new files...
+2026-03-24 04:19:18,156 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 04:19:36,776 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.errors.InsufficientPrivilege) permission denied for sequence transportors_s_no_seq
+
+[SQL: 
+    INSERT INTO transportors (
+        dated, transporter, vehicle_no, material,
+        zkb_slip_no, supplier_slip_no, location,
+        from_location, to_location, trips,
+        zkb_qty_cft, tons
+    )
+    VALUES (
+        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,
+        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,
+        %(from_location)s, %(to_location)s, %(trips)s,
+        %(zkb_qty_cft)s, %(tons)s
+    )
+    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)
+    DO NOTHING;
+    ]
+[parameters: [{'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-14', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 9, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '55', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 12, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 578, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '56', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 11, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 533, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-08', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 8, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '54', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 13, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 588, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-03', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 10, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-06-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-09', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 6, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-10', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 7, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 611, 'tons': 29.18}  ... displaying 10 of 1532 total bound parameter sets ...  {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAG-521', 'material': 'Subbase', 'zkb_slip_no': 2456, 'supplier_slip_no': 280, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1160, 'tons': 57.02}, {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAK-347', 'material': 'Subbase', 'zkb_slip_no': 2457, 'supplier_slip_no': 282, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1220, 'tons': 59.955}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-24 04:29:56,423 - INFO - Watching for new files...
+2026-03-24 04:30:10,010 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-24 04:30:28,991 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: (psycopg2.errors.InsufficientPrivilege) permission denied for sequence transportors_s_no_seq
+
+[SQL: 
+    INSERT INTO transportors (
+        dated, transporter, vehicle_no, material,
+        zkb_slip_no, supplier_slip_no, location,
+        from_location, to_location, trips,
+        zkb_qty_cft, tons
+    )
+    VALUES (
+        %(dated)s, %(transporter)s, %(vehicle_no)s, %(material)s,
+        %(zkb_slip_no)s, %(supplier_slip_no)s, %(location)s,
+        %(from_location)s, %(to_location)s, %(trips)s,
+        %(zkb_qty_cft)s, %(tons)s
+    )
+    ON CONFLICT (dated, transporter, vehicle_no, material, zkb_slip_no)
+    DO NOTHING;
+    ]
+[parameters: [{'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-14', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 9, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '55', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 12, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 578, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '56', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 11, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 533, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-08', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 8, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 675, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': '54', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 13, 'location': 'Shah Faisal C.Plant to 364+450', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+450', 'trips': 1, 'zkb_qty_cft': 588, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-03', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 10, 'location': 'Shah Faisal C.Plant to 364+420', 'from_location': 'Shah Faisal C.Plant', 'to_location': '364+420', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-06-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-09', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 6, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 664, 'tons': 29.18}, {'dated': Timestamp('2025-05-07 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'AK-10', 'material': 'Subbase', 'zkb_slip_no': 0, 'supplier_slip_no': 7, 'location': 'Shah Faisal C.Plant to 363+000', 'from_location': 'Shah Faisal C.Plant', 'to_location': '363+000', 'trips': 1, 'zkb_qty_cft': 611, 'tons': 29.18}  ... displaying 10 of 1532 total bound parameter sets ...  {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAG-521', 'material': 'Subbase', 'zkb_slip_no': 2456, 'supplier_slip_no': 280, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1160, 'tons': 57.02}, {'dated': Timestamp('2025-07-21 00:00:00'), 'transporter': 'Shah Faisal', 'vehicle_no': 'TAK-347', 'material': 'Subbase', 'zkb_slip_no': 2457, 'supplier_slip_no': 282, 'location': 'Shah Faisal C.Plant 381+400', 'from_location': 'Shah Faisal C.Plant', 'to_location': '381+400', 'trips': 1, 'zkb_qty_cft': 1220, 'tons': 59.955}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-25 04:44:07,609 - INFO - Watching for new files...
+2026-03-25 04:44:25,205 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-25 04:44:45,020 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\dummy.xlsx | Error: too many values to unpack (expected 2)
+2026-03-25 04:52:48,592 - INFO - Watching for new files...
+2026-03-25 04:53:02,459 - INFO - Processing started: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-25 04:53:23,060 - INFO - Inserted rows: 1532
+2026-03-25 04:53:23,061 - INFO - SUCCESS: C:/Pipeline-Transportor\input_files\dummy.xlsx
+2026-03-25 05:22:11,215 - INFO - Watching for new files...
+2026-03-25 23:41:03,950 - INFO - Watching for new files...
+2026-03-25 23:48:08,913 - INFO - Watching for new files...
+2026-03-25 23:50:02,807 - INFO - Processing started: C:/Pipeline-Transportor\input_files\Transportors_Data.xlsx
+2026-03-25 23:50:32,857 - INFO - Inserted rows: 4762
+2026-03-25 23:50:32,860 - INFO - SUCCESS: C:/Pipeline-Transportor\input_files\Transportors_Data.xlsx
+2026-03-25 23:50:35,178 - INFO - Inserted rows: 4762
+2026-03-25 23:50:35,180 - ERROR - FAILED: C:/Pipeline-Transportor\input_files\Transportors_Data.xlsx | Error: [WinError 2] The system cannot find the file specified
+2026-03-26 00:33:00,176 - INFO - Watching for new files...
+2026-03-26 00:33:41,976 - INFO - Processing started: C:/Pipeline-Transportor\input_files\Transportors_Data.xlsx
+2026-03-26 00:34:04,252 - INFO - Inserted rows: 4762
+2026-03-26 00:34:04,265 - INFO - SUCCESS: C:/Pipeline-Transportor\input_files\Transportors_Data.xlsx
+2026-03-26 03:57:29,321 - INFO - Watching for new files...
