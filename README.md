@@ -124,7 +124,7 @@ streamlit run dashboard/dashboard.py
 ---
 
 ## 📊 Dashboard Preview
-![Dashboard Preview](Screenshot.png)
+![Dashboard Preview](dashboard_pipeline.png)
 
 ### 🔹 KPI Cards
 
