@@ -8,7 +8,7 @@ import io
 # =========================
 st.set_page_config(page_title="Transport Dashboard", layout="wide")
 
-DB_URL = "postgresql+psycopg2://hussainali:hussain12@localhost:5432/supplier"
+DB_URL = "postgresql+psycopg2://username:password@localhost:5432/database_name"
 engine = create_engine(DB_URL)
 
 # =========================
