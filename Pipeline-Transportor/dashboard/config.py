@@ -7,7 +7,7 @@ PROCESSED_DIR = os.path.join(BASE_DIR, "processed_files")
 FAILED_DIR = os.path.join(BASE_DIR, "failed_files")
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 
-DB_URL = "postgresql+psycopg2://hussainali:hussain12@localhost:5432/supplier"
+DB_URL = "postgresql+psycopg2://username:password@localhost:5432/database_name"
 
 FUZZ_THRESHOLD = 80
 
